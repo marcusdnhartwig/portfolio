@@ -23,15 +23,15 @@ class Footer extends Component {
               <div 
                 onClick={() =>
                   this.props.applyPickedLanguage(
-                    window.$primaryLanguage,
-                    window.$secondaryLanguageIconId
+                    window.$primaryLanguage
+                    
                   )
                 }
                 style={{ display: "inline" }}
               >
                 <span
                   className="iconify language-icon mr-5"
-                  data-icon="twemoji-flag-for-flag-united-kingdom"
+                  data-icon="twemoji-flag-for-flag-united-states"
                   data-inline="false"
                   id={window.$primaryLanguageIconId}
                 ></span>
@@ -39,7 +39,7 @@ class Footer extends Component {
               <div 
                 onClick={() =>
                   this.props.applyPickedLanguage(
-                    window.$secondaryLanguage,
+                    // window.$secondaryLanguage,
                     window.$primaryLanguageIconId
                   )
                 }
@@ -47,7 +47,7 @@ class Footer extends Component {
               >
                 <span
                   className="iconify language-icon"
-                  data-icon="twemoji-flag-for-flag-poland"
+                  // data-icon="twemoji-flag-for-flag-poland"
                   data-inline="false"
                   id={window.$secondaryLanguageIconId}
                 ></span>
